@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-heading: "Space Grotesk", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-nohemi: "Space Grotesk", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: "Space Grotesk", monospace;
+}
+
+html, body {
+  font-family: "Space Grotesk", sans-serif;
+  scroll-behavior: smooth;
+  background-color: #000000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+  position: relative;
+}
+
+#root {
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+  position: relative;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom CSS to hide scrollbars elegantly for a more minimal look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #41F20A;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #32c806;
+}
+

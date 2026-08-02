@@ -1,0 +1,8 @@
+{
+  "name": "PAGINA DE FORMS (parceiro)",
+  "description": "Página de apresentação e proposta de parceria de Direct Response para a expert Mariana, contendo prova de faturamento, explicação sobre VSL, upsell e análise de engajamento do perfil.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
