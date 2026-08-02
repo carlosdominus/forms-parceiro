@@ -516,7 +516,7 @@ export default function CandidaturaForm() {
                         setNome(e.target.value);
                       }}
                       placeholder="Ex: João Silva"
-                      className="w-full bg-[#121319] border border-zinc-800/90 focus:border-[#41F20A] rounded-2xl px-4 py-3.5 text-sm text-white placeholder-zinc-600 focus:outline-none focus:ring-1 focus:ring-[#41F20A] transition"
+                      className="w-full bg-[#121319] border border-zinc-800/90 focus:border-[#41F20A] rounded-2xl px-4 py-3.5 text-base text-white placeholder-zinc-600 focus:outline-none focus:ring-1 focus:ring-[#41F20A] transition"
                     />
                   </div>
 
@@ -536,7 +536,7 @@ export default function CandidaturaForm() {
                         setInstagram(e.target.value);
                       }}
                       placeholder="@seu.perfil"
-                      className="w-full bg-[#121319] border border-zinc-800/90 focus:border-[#41F20A] rounded-2xl px-4 py-3.5 text-sm text-white placeholder-zinc-600 focus:outline-none focus:ring-1 focus:ring-[#41F20A] transition"
+                      className="w-full bg-[#121319] border border-zinc-800/90 focus:border-[#41F20A] rounded-2xl px-4 py-3.5 text-base text-white placeholder-zinc-600 focus:outline-none focus:ring-1 focus:ring-[#41F20A] transition"
                     />
                   </div>
 
@@ -556,7 +556,7 @@ export default function CandidaturaForm() {
                         setWhatsapp(maskPhone(e.target.value));
                       }}
                       placeholder="(11) 99999-9999"
-                      className="w-full bg-[#121319] border border-zinc-800/90 focus:border-[#41F20A] rounded-2xl px-4 py-3.5 text-sm font-mono text-white placeholder-zinc-600 focus:outline-none focus:ring-1 focus:ring-[#41F20A] transition"
+                      className="w-full bg-[#121319] border border-zinc-800/90 focus:border-[#41F20A] rounded-2xl px-4 py-3.5 text-base font-mono text-white placeholder-zinc-600 focus:outline-none focus:ring-1 focus:ring-[#41F20A] transition"
                     />
                   </div>
                 </div>
@@ -564,33 +564,19 @@ export default function CandidaturaForm() {
             )}
 
             {/* Bottom Navigation CTA Bar */}
-            <div className="pt-8 mt-8 border-t border-zinc-900 flex items-center justify-between gap-4">
-              {step > 1 ? (
-                <button
-                  type="button"
-                  onClick={handleBack}
-                  disabled={isSubmitting}
-                  className="px-5 py-3 rounded-2xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-xs font-mono text-zinc-400 hover:text-white transition flex items-center gap-1.5 disabled:opacity-50"
-                >
-                  <ChevronLeft size={16} />
-                  <span>Anterior</span>
-                </button>
-              ) : (
-                <div />
-              )}
-
+            <div className="pt-6 mt-6 border-t border-zinc-900 flex flex-col items-center justify-center gap-3 w-full">
               {step < 4 ? (
                 <LiquidMetalButton
                   type="button"
                   label="PRÓXIMA ETAPA"
                   icon={<ArrowRight size={14} className="text-[#41F20A]" />}
                   onClick={handleNext}
-                  width={220}
+                  width={240}
                 />
               ) : (
                 <LiquidMetalButton
                   type="submit"
-                  label={isSubmitting ? "ENVIANDO..." : "Receber meu diagnóstico"}
+                  label={isSubmitting ? "ENVIANDO..." : "RECEBER MEU DIAGNÓSTICO"}
                   icon={
                     isSubmitting ? (
                       <Loader2 size={14} className="text-[#41F20A] animate-spin" />
@@ -599,8 +585,20 @@ export default function CandidaturaForm() {
                     )
                   }
                   onClick={handleSubmit}
-                  width={260}
+                  width={280}
                 />
+              )}
+
+              {step > 1 && (
+                <button
+                  type="button"
+                  onClick={handleBack}
+                  disabled={isSubmitting}
+                  className="px-5 py-2.5 rounded-2xl bg-zinc-900/80 hover:bg-zinc-800 border border-zinc-800/80 text-xs font-mono text-zinc-400 hover:text-white transition flex items-center justify-center gap-1.5 disabled:opacity-50 mt-1"
+                >
+                  <ChevronLeft size={16} />
+                  <span>Anterior</span>
+                </button>
               )}
             </div>
 

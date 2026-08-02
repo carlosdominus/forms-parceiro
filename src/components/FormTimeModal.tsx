@@ -282,7 +282,7 @@ export default function FormTimeModal({ isOpen, onClose }: FormTimeModalProps) {
                         value={nome}
                         onChange={(e) => setNome(e.target.value)}
                         placeholder="Seu nome completo"
-                        className="w-full bg-[#121319] border border-zinc-800/90 focus:border-[#41F20A] rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-600 focus:outline-none focus:ring-1 focus:ring-[#41F20A] transition"
+                        className="w-full bg-[#121319] border border-zinc-800/90 focus:border-[#41F20A] rounded-xl px-4 py-3 text-base text-white placeholder-zinc-600 focus:outline-none focus:ring-1 focus:ring-[#41F20A] transition"
                       />
                     </div>
 
@@ -297,7 +297,7 @@ export default function FormTimeModal({ isOpen, onClose }: FormTimeModalProps) {
                           value={email}
                           onChange={(e) => setEmail(e.target.value)}
                           placeholder="seu.email@exemplo.com"
-                          className="w-full bg-[#121319] border border-zinc-800/90 focus:border-[#41F20A] rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-600 focus:outline-none focus:ring-1 focus:ring-[#41F20A] transition"
+                          className="w-full bg-[#121319] border border-zinc-800/90 focus:border-[#41F20A] rounded-xl px-4 py-3 text-base text-white placeholder-zinc-600 focus:outline-none focus:ring-1 focus:ring-[#41F20A] transition"
                         />
                       </div>
 
@@ -311,7 +311,7 @@ export default function FormTimeModal({ isOpen, onClose }: FormTimeModalProps) {
                           value={whatsapp}
                           onChange={(e) => setWhatsapp(e.target.value)}
                           placeholder="(11) 99999-9999"
-                          className="w-full bg-[#121319] border border-zinc-800/90 focus:border-[#41F20A] rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-600 focus:outline-none focus:ring-1 focus:ring-[#41F20A] transition"
+                          className="w-full bg-[#121319] border border-zinc-800/90 focus:border-[#41F20A] rounded-xl px-4 py-3 text-base text-white placeholder-zinc-600 focus:outline-none focus:ring-1 focus:ring-[#41F20A] transition"
                         />
                       </div>
                     </div>
@@ -326,7 +326,7 @@ export default function FormTimeModal({ isOpen, onClose }: FormTimeModalProps) {
                         value={portfolio}
                         onChange={(e) => setPortfolio(e.target.value)}
                         placeholder="https://linkedin.com/in/seu-perfil ou link do drive"
-                        className="w-full bg-[#121319] border border-zinc-800/90 focus:border-[#41F20A] rounded-xl px-4 py-3 text-sm text-white placeholder-zinc-600 focus:outline-none focus:ring-1 focus:ring-[#41F20A] transition"
+                        className="w-full bg-[#121319] border border-zinc-800/90 focus:border-[#41F20A] rounded-xl px-4 py-3 text-base text-white placeholder-zinc-600 focus:outline-none focus:ring-1 focus:ring-[#41F20A] transition"
                       />
                     </div>
 
@@ -339,7 +339,7 @@ export default function FormTimeModal({ isOpen, onClose }: FormTimeModalProps) {
                         value={mensagem}
                         onChange={(e) => setMensagem(e.target.value)}
                         placeholder="Conte brevemente sobre seus melhores trabalhos..."
-                        className="w-full bg-[#121319] border border-zinc-800/90 focus:border-[#41F20A] rounded-xl px-4 py-2.5 text-sm text-white placeholder-zinc-600 focus:outline-none focus:ring-1 focus:ring-[#41F20A] transition resize-none"
+                        className="w-full bg-[#121319] border border-zinc-800/90 focus:border-[#41F20A] rounded-xl px-4 py-2.5 text-base text-white placeholder-zinc-600 focus:outline-none focus:ring-1 focus:ring-[#41F20A] transition resize-none"
                       />
                     </div>
                   </div>
